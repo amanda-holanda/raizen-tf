@@ -1,33 +1,39 @@
-
 export default {
+
   "produtos": [
     {
       "cnpj": "75796555587850",
       "periodo": "10-2022",
       "lote": "544",
       "fazenda": {
-        "nome": "Parque de Bioenergia Gasa",
         "numero": "10",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
           "certificacoes": "Bonsucro"
-        }
+        },
       },
-      "localização geografica": "Rio de Janeiro"
+      "zona": "1",
+      "talhao": "3",
+      "propriedade": "Nota de palha",
+      "localizacaoGeografica": "Rio de Janeiro-RJ",
+      "status": "Disponível",
     },
     {
       "cnpj": "75796555587851",
       "periodo": "11-2022",
-      "lote": "322",
+      "lote": "CRISTAL_322",
       "fazenda": {
-        "nome": "Parque de Bioenergia Serra",
         "numero": "20",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
           "certificacoes": "Renovabio"
-        }
+        },
       },
-      "localização geografica": "São Paulo"
+      "zona": "2",
+      "talhao": "5",
+      "propriedade": "CDC",
+      "localizacaoGeografica": "São Paulo-SP",
+      "status": "Utilizado",
 
     },
     {
@@ -40,9 +46,14 @@ export default {
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
           "certificacoes": "ELO"
-        }
+        },
       },
-      "localização geografica": "Minas Gerais"
+      "zona": "3",
+      "talhao": "4",
+      "propriedade": "CDC/Nota de Palha",
+      "localizacaoGeografica": "Minas Gerais-MG",
+      "status": "Disponível",
     }
   ]
+
 }
