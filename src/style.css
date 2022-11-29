@@ -8,10 +8,10 @@
 
 :root {    
   --branco: aliceblue;
-  --roxo: purple;
-  --violeta: #9B59B6;
-  --lilas: #A87CFE;
-  --black: #000000;
+  --roxo: #781E77;
+  --azul: #1fc0da;
+  --rosa: #ea368e;
+  --laranja: #f47920;
 }
 
 .main-header {    
