@@ -13,7 +13,7 @@ const login = () => {
             </label>
             <button type="button"  id="btnEntrar">Entrar</button>            
         </form> 
-    
+
     `
 
   container.innerHTML = template;

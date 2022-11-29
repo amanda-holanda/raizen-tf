@@ -1,4 +1,3 @@
-/*import './lib/firebase.js';*/
 import home from './pages/home/index.js'
 import info from './pages/info-clients/index.js';
 import login from './pages/login/index.js';
@@ -37,4 +36,4 @@ const executeHashChange = () => {
 window.addEventListener('load', () => {
   changeHash();
   executeHashChange();
-}); 
+});
