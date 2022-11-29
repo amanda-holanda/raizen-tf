@@ -3,7 +3,7 @@ export default {
   "produtos": [
     {
       "cnpj": "75796555587850",
-      "periodo": "10-2022",
+      "periodo": "10/2022",
       "lote": "544",
       "fazenda": {
         "numero": "10",
@@ -20,7 +20,7 @@ export default {
     },
     {
       "cnpj": "75796555587851",
-      "periodo": "11-2022",
+      "periodo": "11/2022",
       "lote": "CRISTAL_322",
       "fazenda": {
         "numero": "20",
@@ -38,7 +38,7 @@ export default {
     },
     {
       "cnpj": "75796555587852",
-      "periodo": "12-2022",
+      "periodo": "12/2022",
       "lote": "724",
       "fazenda": {
         "nome": "Parque de Bioenergia Benálcool",

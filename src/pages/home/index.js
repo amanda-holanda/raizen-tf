@@ -1,4 +1,5 @@
-import data from '../../data/data.js'
+import filterData from '../../data/data.js';
+import raizen from '../../data/raizen.js';
 
 const home = () => {
     const container = document.createElement('div');
@@ -9,9 +10,17 @@ const home = () => {
         <form class="home-form">
             <label for="periodo">CNPJ:</label>
             <input name="cnpj" type="text" placeholder="00.000.000/0001-00" />
-            <button type="submit">Pesquisar</button>
-            <label for="periodo">Periodo:</label>
-            <input name="periodo" type="date" />            
+            <button type="submit">BUSCAR</button>
+            <select name="periodoDe" id="primeiroPeriodo">
+                <option value="10/2022">10/2022</option>
+                <option value="11/2022">11/2022</option>
+                <option value="12/2022">12/2022</option>
+            </select>           
+            <select name="periodoA" id="segundoPeriodo">
+                <option value="10/2022">10/2022</option>
+                <option value="11/2022">11/2022</option>
+                <option value="12/2022">12/2022</option>
+            </select>
         </form>       
         
         <section class="bigclients-infos" id="bigClientsInfosContainer"></section>  
@@ -19,7 +28,7 @@ const home = () => {
     `
     container.innerHTML = template;
 
-    const infos = data.infos;
+    const infos = raizen.infos;
 
     function displayBigClientsInfos(infos) {
          const arrayBigClientsInfos = infos.map((item) => {
@@ -38,6 +47,11 @@ const home = () => {
     
 
     return container;
+}
+
+function filterPeriod(filterResult, "periodo", selectPeriod.value) {
+
+
 }
 
 export default home;
