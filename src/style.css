@@ -12,19 +12,5 @@
   --azul: #1fc0da;
   --rosa: #ea368e;
   --laranja: #f47920;
-}
-
-.main-header {    
-    background-color: var(--roxo);    
-    height: 10vh;
-    display: flex;
-    justify-content: flex-end;
-    display: flex;
-    justify-content: right;
-    align-items: end;
-}
-
-.links-home {
-    text-decoration: none;
-    color: var(--branco);
+  --cinza: #4A4A4A;
 }

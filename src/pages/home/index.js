@@ -4,6 +4,11 @@ const home = () => {
     const container = document.createElement('div');
     container.classList.add('wrapper-home');
     const template = `       
+        <header class="main-header">
+            <a href="" class="links-home">Home</a>
+            <a href="#info" class="links-home">Informações</a>
+            <a href="#login" class="links-home">Login</a>
+        </header>
         <h1>Home/Grandes clientes</h1> 
         <img class="home-img" src="" />
         <form class="home-form">
