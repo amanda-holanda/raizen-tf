@@ -10,8 +10,7 @@ const login = () => {
                 <input type="password"></input>
             </label>
             <a href="#tabela">Entrar</a>            
-        </form> 
-    
+        </form>    
     `
 
     container.innerHTML = template;

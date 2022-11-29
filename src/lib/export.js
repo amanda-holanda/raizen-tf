@@ -6,3 +6,7 @@ export {
   signInWithPopup, 
   GoogleAuthProvider, 
 } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js';
+
+export {
+  getFirestore  
+} from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';
