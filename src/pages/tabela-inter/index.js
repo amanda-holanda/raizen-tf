@@ -1,3 +1,5 @@
+
+
 const tabela = () => {
     const container = document.createElement('div');
     const template = `
@@ -8,5 +10,10 @@ const tabela = () => {
     container.innerHTML = template;
     return container;
 }
-
 export default tabela;
+
+
+
+
+
+

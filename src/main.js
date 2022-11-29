@@ -36,4 +36,6 @@ const executeHashChange = () => {
 window.addEventListener('load', () => {
   changeHash();
   executeHashChange();
+
 });
+
