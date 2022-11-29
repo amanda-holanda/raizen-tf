@@ -1,3 +1,5 @@
+import data from '../../data/data.js'
+
 const home = () => {
     const container = document.createElement('div');
     container.classList.add('wrapper-home');
@@ -12,11 +14,29 @@ const home = () => {
             <input name="periodo" type="date" />            
         </form>       
         
-        <section class="bigclients-infos" id="bigClientsInfos"></section>  
+        <section class="bigclients-infos" id="bigClientsInfosContainer"></section>  
     
     `
-
     container.innerHTML = template;
+
+    const infos = data.results;
+
+    function displayBigClientsInfos(infos) {
+         const arrayBigClientsInfos = infos.map((item) => {
+            const template = `
+            <div class="tabela-home">   
+                <ul>                       
+                <li>Fazenda: ${item.fazenda}</li>               
+                </ul>
+            </div>
+            `;
+            return template;
+        });
+        return arrayBigClientsInfos.join("");
+    }
+    container.querySelector('#bigClientsInfosContainer').innerHTML = displayBigClientsInfos(infos);
+    
+
     return container;
 }
 
