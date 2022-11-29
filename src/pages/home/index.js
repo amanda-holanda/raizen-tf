@@ -9,8 +9,7 @@ const home = () => {
             <input name="cnpj" type="text" placeholder="00.000.000/0001-00" />
             <button type="submit">Pesquisar</button>
             <label for="periodo">Periodo:</label>
-            <input name="periodo" type="date" />
-            
+            <input name="periodo" type="date" />            
         </form>       
         
         <section class="bigclients-infos" id="bigClientsInfos"></section>  
