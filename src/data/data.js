@@ -1,5 +1,6 @@
 export default {
- "results": [
+ "infos": [
+
         {
             "fazenda": "Fazenda Santa Maria"
 

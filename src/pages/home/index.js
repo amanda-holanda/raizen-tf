@@ -19,7 +19,7 @@ const home = () => {
     `
     container.innerHTML = template;
 
-    const infos = data.results;
+    const infos = data.infos;
 
     function displayBigClientsInfos(infos) {
          const arrayBigClientsInfos = infos.map((item) => {
