@@ -22,19 +22,8 @@ const home = () => {
             </div>
             <div class="periodo-container">
                 <label for="periodo">Período:
-                    <select name="periodoDe" id="primeiroPeriodo">
-                        <option value="10/2022">10/2022</option>
-                        <option value="11/2022">11/2022</option>
-                        <option value="12/2022">12/2022</option>
-                    </select> 
-                </label>   
-                <label for="a">a      
-                    <select name="periodoA" id="segundoPeriodo">
-                        <option value="10/2022">10/2022</option>
-                        <option value="11/2022">11/2022</option>
-                        <option value="12/2022">12/2022</option>
-                    </select>
-                </label>
+                    <input type="date" name="periodoDe" id="firstDate" />
+                </label>                
             </div>
         </form>
         
@@ -59,7 +48,10 @@ const home = () => {
     const infos = raizen.produtos;    
     const cnpjInput = container.querySelector('#cnpjInput');
     const searchBtn = container.querySelector('#searchBtn');
-    const bigClientsInfosContainer = container.querySelector('#bigClientsInfosContainer')
+    const bigClientsInfosContainer = container.querySelector('#bigClientsInfosContainer');
+    const firstDate = container.querySelector('#firstDate');
+     
+    const dateData = infos.periodo;
 
     function displayBigClientsInfos(infos) {
         const arrayBigClientsInfos = infos.map((item) => {
@@ -77,8 +69,7 @@ const home = () => {
         });           
 
         return arrayBigClientsInfos.join("");
-    }
-    
+    }    
 
     function filterData(infos, cnpj, cnpjInput) {
         console.log(infos, cnpj, cnpjInput)
@@ -94,9 +85,25 @@ const home = () => {
         e.preventDefault();
         const dataFilter = filterData(infos, 'cnpj', cnpjInput.value);
 
-        return bigClientsInfosContainer.innerHTML = displayBigClientsInfos(dataFilter);
+        bigClientsInfosContainer.innerHTML = displayBigClientsInfos(dataFilter);
     });
     
+    
+    /*function dateFilter(dateData, firstDate){
+        return dateData >= firstDate;
+    }
+
+    console.log(dateFilter(dateData));*/
+
+    firstDate.addEventListener('change', () => {
+        console.log(firstDate.value)
+        const dataFilter = filterData(infos, 'cnpj', cnpjInput.value);
+        const dataResult = filterData(dataFilter, 'periodo', firstDate.value);
+        console.log(dataResult)
+
+        bigClientsInfosContainer.innerHTML = displayBigClientsInfos(dataResult);
+    });
+
     return container;
 }
 
@@ -104,6 +111,6 @@ export default home;
 
 
 // - [X] - organização dos dados na tela: em tabela
-// - [] - home : filtro do cnpj
+// - [X] - home : filtro do cnpj
 // - [] - filtro por periodos
 
