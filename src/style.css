@@ -1,11 +1,16 @@
 @import url('./pages/home/home.css');
 @import url('./pages/login/login.css');
+@font-face {
+  font-family: 'dinpro';
+  src: url('../../font/dinpro.ttf') format('truetype');
+}
 
 * {
     margin: 0;
     padding: 0;    
     border: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;   
+    font-family: 'dinpro'; 
 }
 
 :root {    
