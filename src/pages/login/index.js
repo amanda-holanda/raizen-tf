@@ -6,7 +6,7 @@ const login = () => {
   const template = `
         <header class="header-login">
           <a href="">
-            <img class="logo-login" src="../../img/raizen-logo.png" alt="raizen logo"/>
+            <img class="logo-login" src="img/raizen-logo.png" alt="raizen logo"/>
           </a>
         </header>    
         <h3 class="title-login">Área de uso interno</h3>    

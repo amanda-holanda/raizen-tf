@@ -6,7 +6,7 @@ const home = () => {
     const template = `       
         <header class="header-home">
             <a href="" class="links-home">
-                <img class="logo-home" src="../../img/raizen-logo.png" alt="raizen logo"/>
+                <img class="logo-home" src="img/raizen-logo.png" alt="raizen logo"/>
             </a>            
             <a href="#info" class="links-home">Informações</a>
             <a href="#login" class="links-home">Login Interno</a>
