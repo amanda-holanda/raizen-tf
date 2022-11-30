@@ -16,24 +16,24 @@ const tabela = () => {
                 <option value="30">30</option>
             </select>           
             <select class="select-certificacoes" name="certificacoes" id="certificacoes">
+                <option value="certificacoes">certificações</option>
                 <option value="ELO">ELO</option>
                 <option value="Renovabio">Renovabio</option>
                 <option value="Bonsucro">Bonsucro</option>
-                <option value="ELO">ELO</option>
                 <option value="ISCC">ISCC</option>
             </select>
-        </form>    
+        </form>
+        <button class="btn-clear">Limpar filtros</button>
+        <div class="resultado"> </div>    
     `
 
     container.innerHTML = template;
 
+    const infos = database.produtos;
+    let filterResult = infos;
 
+    function printInfos(infos) {
 
-const infos = database.produtos;
-let filterResult = infos;
-
-function printInfos(infos) {
-        
         const raizenInfos = infos.map((item) => {
             return `
             <div class="tabela-internos">
@@ -50,33 +50,63 @@ function printInfos(infos) {
                         <td>${item.fazenda.atributos.certificacoes}</td>
                         <td>${item.fazenda.atributos.praticasEsg}</td>
                     </tr>
-                </table>      
-            </div>    
+                </table>  
+             </div>          
             `;
-        
+
         });
-    
-     return container.innerHTML += raizenInfos.join("");
-}
 
+        return container.querySelector(".resultado").innerHTML = raizenInfos.join("");
+    }
 
+    printInfos(infos)
 
-// printInfos(infos)
+    const selectUnidade = container.querySelector(".select-unidade");
+    const selectFazenda = container.querySelector(".select-fazenda");
+    const selectCertifica = container.querySelector(".select-certificacoes");
+
     const filterData = (data, criteria, value) => 
     data.filter(obj => {
         return obj[criteria] === value
     });
 
-    const selectUnidade = container.querySelector(".select-unidade");
 
     function printUnidadeFilter() {
-     filterResult = filterData (database.produtos, "unidade", selectUnidade.value);
-     return printInfos(filterResult); 
+        filterResult = filterData(database.produtos, "unidade", selectUnidade.value);
+        return printInfos(filterResult);
     }
 
-     selectUnidade.addEventListener("change", printUnidadeFilter);     
+    selectUnidade.addEventListener("change", printUnidadeFilter);
 
-  return container;
+
+    function printFazendaFilter() {
+        const dataProdutos = database.produtos;
+        const dataFazenda = dataProdutos.filter((obj) => (obj.fazenda.numero === selectFazenda.value));
+        filterResult = dataFazenda;
+        return printInfos(filterResult);
+    }
+
+    selectFazenda.addEventListener("change", printFazendaFilter);
+
+
+    function printCertificaFilter() {
+        const dataProdutos = database.produtos;
+        const dataCertifica = dataProdutos.filter((obj) => (obj.fazenda.atributos.certificacoes === selectCertifica.value));
+        filterResult = dataCertifica;
+        return printInfos(filterResult);
+    }
+
+    selectCertifica.addEventListener("change", printCertificaFilter);
+
+    function clear() {
+        filterResult = infos;
+        printInfos (filterResult);
+      }
+
+    container.querySelector(".btn-clear").addEventListener("click", clear);
+    
+
+    return container;
 }
 
 export default tabela;
