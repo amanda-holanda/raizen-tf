@@ -3,8 +3,6 @@ const info = () => {
     container.setAttribute("class","info");
     const template = `
         <div class="header-info">
-            <!--<img src="../../img/logobandeirinha.png">-->
-            <h1>Açúcar</h1>
             <button class="btn-voltar">Voltar</button>
         </div>
         <div class="subtitle-info">
