@@ -1,0 +1,42 @@
+.wrapper-home {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {    
+    background-color: var(--roxo);    
+    height: 10vh;
+    display: flex;    
+    justify-content: right;
+    align-items: end;
+    width: 100%;
+}
+
+.links-home {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.home-img {    
+    height: 100px;
+    width: 500px;
+    background: rgb(133, 184, 133);
+}
+
+.home-form {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bigclients-infos {
+    border: 3px solid orange;
+    height: 100px;
+    width: 500px;
+
+}
+
