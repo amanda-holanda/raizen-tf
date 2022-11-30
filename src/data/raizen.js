@@ -5,11 +5,12 @@ export default {
       "cnpj": "75796555587850",
       "periodo": "10/2022",
       "lote": "544",
+      "unidade": "COPI",
       "fazenda": {
         "numero": "10",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
-          "certificacoes": "Bonsucro"
+          "certificacoes": "Bonsucro",
         },
       },
       "zona": "1",
@@ -22,11 +23,12 @@ export default {
       "cnpj": "75796555587851",
       "periodo": "11/2022",
       "lote": "CRISTAL_322",
+      "unidade": "COPI",
       "fazenda": {
         "numero": "20",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
-          "certificacoes": "Renovabio"
+          "certificacoes": "Renovabio",
         },
       },
       "zona": "2",
@@ -40,12 +42,13 @@ export default {
       "cnpj": "75796555587852",
       "periodo": "12/2022",
       "lote": "724",
+      "unidade": "COPI",
       "fazenda": {
         "nome": "Parque de Bioenergia Benálcool",
         "numero": "30",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
-          "certificacoes": "ELO"
+          "certificacoes": "ELO",
         },
       },
       "zona": "3",

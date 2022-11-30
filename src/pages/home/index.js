@@ -1,4 +1,4 @@
-import filterData from '../../data/data.js';
+
 import raizen from '../../data/raizen.js';
 
 const home = () => {
@@ -28,7 +28,7 @@ const home = () => {
     `
     container.innerHTML = template;
 
-    const infos = raizen.infos;
+    const infos = raizen.produtos;
 
     function displayBigClientsInfos(infos) {
          const arrayBigClientsInfos = infos.map((item) => {
@@ -49,10 +49,10 @@ const home = () => {
     return container;
 }
 
-function filterPeriod(filterResult, "periodo", selectPeriod.value) {
+// function filterPeriod(filterResult, "periodo", selectPeriod.value) {
 
 
-}
+// }
 
 export default home;
 
