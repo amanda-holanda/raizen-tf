@@ -5,27 +5,37 @@ const home = () => {
     const container = document.createElement('div');
     container.classList.add('wrapper-home');
     const template = `       
-        <header class="main-header">
-            <a href="" class="links-home">Home</a>
+        <header class="header-home">
+            <a href="" class="links-home">
+                <img class="logo-home" src="../../img/raizen-logo.png" alt="raizen logo"/>
+            </a>            
             <a href="#info" class="links-home">Informações</a>
-            <a href="#login" class="links-home">Login</a>
-        </header>
-        <h1>Home/Grandes clientes</h1> 
-        <img class="home-img" src="" />
+            <a href="#login" class="links-home">Login Interno</a>
+        </header>         
+        <img class="home-img" src="" />        
         <form class="home-form">
-            <label for="periodo">CNPJ:</label>
-            <input name="cnpj" type="text" placeholder="00.000.000/0001-00" />
-            <button type="submit">BUSCAR</button>
-            <select name="periodoDe" id="primeiroPeriodo">
-                <option value="10/2022">10/2022</option>
-                <option value="11/2022">11/2022</option>
-                <option value="12/2022">12/2022</option>
-            </select>           
-            <select name="periodoA" id="segundoPeriodo">
-                <option value="10/2022">10/2022</option>
-                <option value="11/2022">11/2022</option>
-                <option value="12/2022">12/2022</option>
-            </select>
+            <label class="label-cnpj" for="periodo">CNPJ da sua empresa:</label>
+            <div class="cnpj-container">   
+                <input class="input-cnpj" name="cnpj" type="text" placeholder="00.000.000/0001-00" />         
+                <button class="btn-buscar-cnpj" type="submit">buscar</button>
+            
+            </div>
+            <div class="periodo-container">
+                <label for="periodo">Período:
+                    <select name="periodoDe" id="primeiroPeriodo">
+                        <option value="10/2022">10/2022</option>
+                        <option value="11/2022">11/2022</option>
+                        <option value="12/2022">12/2022</option>
+                    </select> 
+                </label>   
+                <label for="a">a      
+                    <select name="periodoA" id="segundoPeriodo">
+                        <option value="10/2022">10/2022</option>
+                        <option value="11/2022">11/2022</option>
+                        <option value="12/2022">12/2022</option>
+                    </select>
+                </label>
+            </div>
         </form>       
         
         <section class="bigclients-infos" id="bigClientsInfosContainer"></section>  
