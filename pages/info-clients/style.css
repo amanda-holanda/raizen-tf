@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'dinpro';
     src: url('../../font/dinpro.ttf') format('truetype');
-  }
+}
+
 .info{
     width: 100%;
     height: 100%;

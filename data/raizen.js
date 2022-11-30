@@ -3,7 +3,7 @@ export default {
   "produtos": [
     {
       "cnpj": "75796555587850",
-      "periodo": "10/2022",
+      "periodo": "2022-10-01",
       "lote": "544",
       "unidade": "COPI",
       "fazenda": {
@@ -21,7 +21,7 @@ export default {
     },
     {
       "cnpj": "75796555587851",
-      "periodo": "11/2022",
+      "periodo": "2022-11-01",
       "lote": "CRISTAL_322",
       "unidade": "COPI",
       "fazenda": {
@@ -40,7 +40,7 @@ export default {
     },
     {
       "cnpj": "75796555587852",
-      "periodo": "12/2022",
+      "periodo": "2022-12-01",
       "lote": "724",
       "unidade": "XYZ",
       "fazenda": {
@@ -54,6 +54,25 @@ export default {
       "zona": "3",
       "talhao": "4",
       "propriedade": "CDC/Nota de Palha",
+      "localizacaoGeografica": "Minas Gerais-MG",
+      "status": "Disponível",
+    },
+    {
+      "cnpj": "75796555587852",
+      "periodo": "2021-12-01",
+      "lote": "724",
+      "unidade": "XYZ",
+      "fazenda": {
+        "nome": "Parque de Bioenergia Benálcool",
+        "numero": "30",
+        "atributos": {
+          "praticasEsg": "Trabalho regulamentado",
+          "certificacoes": "ELO",
+        },
+      },
+      "zona": "3",
+      "talhao": "4",
+      "propriedade": "CDC",
       "localizacaoGeografica": "Minas Gerais-MG",
       "status": "Disponível",
     }

@@ -6,23 +6,32 @@
     align-items: center;
 }
 
-.main-header {    
+.header-home {    
     background-color: var(--roxo);    
-    height: 10vh;
+    height: 20vh;    
     display: flex;    
     justify-content: right;
     align-items: end;
     width: 100%;
 }
 
+.logo-home {
+    height: 10vh;
+    position: fixed;
+    top:0;
+    left: 0;    
+    margin: 2%;
+}
+
 .links-home {
     text-decoration: none;
     color: var(--branco);
+    margin: 1%;
 }
 
 .home-img {    
     height: 100px;
-    width: 500px;
+    width: 100%;
     background: rgb(133, 184, 133);
 }
 
@@ -30,13 +39,49 @@
     border: 1px solid blue;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;   
+    padding: 3%;
+    width: 100%;
+    align-items: center;
+}
+
+.label-cnpj {    
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.cnpj-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-cnpj {
+    background-color: var(--cinza-claro);    
+    width: 100%;
+    height: 50px;
+}
+
+.btn-buscar-cnpj {
+    width: 160px;
+    height: 50px;       
+    background-color: var(--roxo);
+    color: var(--branco);
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.periodo-container{
+    width: 100%;    
+    margin: 1% 0;
+    text-align: center;
 }
 
 .bigclients-infos {
-    border: 3px solid orange;
-    height: 100px;
-    width: 500px;
-
+    border: 3px solid orange;    
+    width: 100%;
 }
 
