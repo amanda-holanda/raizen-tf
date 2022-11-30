@@ -16,8 +16,8 @@ const home = () => {
         <form class="home-form">
             <label class="label-cnpj" for="periodo">CNPJ da sua empresa:</label>
             <div class="cnpj-container">   
-                <input class="input-cnpj" name="cnpj" type="text" placeholder="00.000.000/0001-00" />         
-                <button class="btn-buscar-cnpj" type="submit">buscar</button>
+                <input id="cnpjInput" class="input-cnpj" name="cnpj" type="text" placeholder="00.000.000/0001-00" />         
+                <button id="searchBtn" class="btn-buscar-cnpj">buscar</button>
             
             </div>
             <div class="periodo-container">
@@ -36,50 +36,74 @@ const home = () => {
                     </select>
                 </label>
             </div>
-        </form>       
+        </form>
         
-        <section class="bigclients-infos" id="bigClientsInfosContainer"></section>  
+        <section class="bigclients-infos">
+            <table class="tabela-home">
+                <tr>
+                    <th>CNPJ</th>
+                    <th>Lote</th>
+                    <th>Fazenda</th>
+                    <th>Zona</th>
+                    <th>Talhão</th>  
+                    <th>Propriedade</th>
+                </tr>                     
+            </table> 
+            <table id="bigClientsInfosContainer"></table>
+
+        </section>  
     
     `
     container.innerHTML = template;
 
-    const infos = raizen.produtos;
+    const infos = raizen.produtos;    
+    const cnpjInput = container.querySelector('#cnpjInput');
+    const searchBtn = container.querySelector('#searchBtn');
+    const bigClientsInfosContainer = container.querySelector('#bigClientsInfosContainer')
 
     function displayBigClientsInfos(infos) {
-         const arrayBigClientsInfos = infos.map((item) => {
-            const template = `
-            <div class="tabela-home">   
-                <ul>                       
-                <li>Fazenda: ${item.fazenda}</li>               
-                </ul>
-            </div>
+        const arrayBigClientsInfos = infos.map((item) => {
+            const template = `  
+                <tr>                                     
+                    <td>${item.cnpj}</td>
+                    <td>${item.lote}</td>
+                    <td>${item.fazenda.numero}</td>
+                    <td>${item.zona}</td>
+                    <td>${item.talhao}</td>
+                    <td>${item.propriedade}</td>
+                </tr>                              
             `;
             return template;
-        });
+        });           
+
         return arrayBigClientsInfos.join("");
     }
-    container.querySelector('#bigClientsInfosContainer').innerHTML = displayBigClientsInfos(infos);
     
 
+    function filterData(infos, cnpj, cnpjInput) {
+        console.log(infos, cnpj, cnpjInput)
+        const filterCnpj = infos.filter(obj => {
+            return obj[cnpj] === cnpjInput;
+        });
+        console.log(filterCnpj)
+
+        return filterCnpj;
+    }
+
+    searchBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dataFilter = filterData(infos, 'cnpj', cnpjInput.value);
+
+        return bigClientsInfosContainer.innerHTML = displayBigClientsInfos(dataFilter);
+    });
+    
     return container;
 }
-
-// function filterPeriod(filterResult, "periodo", selectPeriod.value) {
-
-
-// }
 
 export default home;
 
 
+// - [X] - organização dos dados na tela: em tabela
+// - [] - home : filtro do cnpj
+// - [] - filtro por periodos
 
-// - [] - home : html do principal
-
-// - [] - home : html da spa
-
-// quando o cliente grande colocar o cnpj e o periodo, ele vai acessar um banco de dados com 
-// as informações daquela empresa e ver ela filtrada ali 
-
-// - 
-// - [] - criar no db firestore um objeto com o cnpj, periodo e outras infos daquele empresa
-// - [] - quando apertar no botao pesquisar ele filtra 

@@ -1,4 +1,3 @@
-import { filterData } from '../../data/data.js';
 import database from '../../data/raizen.js';
 
 const tabela = () => {
@@ -38,20 +37,21 @@ function printInfos(infos) {
         const raizenInfos = infos.map((item) => {
             return `
             <div class="tabela-internos">
-             <table>
-             <tr>
-                <th>Unidade</th>
-                <th>Fazenda</th>
-                <th>Certificações</th>
-                <th>Práticas ESG</th>
-             </tr>
-             <tr>
-                <td>${item.unidade}</td>
-                <td>${item.fazenda.numero}</td>
-                <td>${item.fazenda.atributos.certificacoes}</td>
-                <td>${item.fazenda.atributos.praticasEsg}</td>
-             </tr>
-             </table>            
+                <table>
+                    <tr>
+                        <th>Unidade</th>
+                        <th>Fazenda</th>
+                        <th>Certificações</th>
+                        <th>Práticas ESG</th>
+                    </tr>
+                    <tr>
+                        <td>${item.unidade}</td>
+                        <td>${item.fazenda.numero}</td>
+                        <td>${item.fazenda.atributos.certificacoes}</td>
+                        <td>${item.fazenda.atributos.praticasEsg}</td>
+                    </tr>
+                </table>      
+            </div>    
             `;
         
         });
@@ -59,7 +59,13 @@ function printInfos(infos) {
      return container.innerHTML += raizenInfos.join("");
 }
 
+
+
 // printInfos(infos)
+    const filterData = (data, criteria, value) => 
+    data.filter(obj => {
+        return obj[criteria] === value
+    });
 
     const selectUnidade = container.querySelector(".select-unidade");
 
