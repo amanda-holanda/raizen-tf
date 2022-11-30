@@ -6,6 +6,20 @@
     align-items: center;
 }
 
+.main-header {    
+    background-color: var(--roxo);    
+    height: 10vh;
+    display: flex;    
+    justify-content: right;
+    align-items: end;
+    width: 100%;
+}
+
+.links-home {
+    text-decoration: none;
+    color: var(--branco);
+}
+
 .home-img {    
     height: 100px;
     width: 500px;
@@ -25,3 +39,4 @@
     width: 500px;
 
 }
+

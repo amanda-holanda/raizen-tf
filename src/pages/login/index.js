@@ -2,16 +2,20 @@ import {loginEmailPassword} from '../../lib/index.js';
 
 const login = () => {
   const container = document.createElement('div');
+  container.classList.add('wrapper-login');
   const template = `
-        <h1>Login</h1>
-        <form>
-            <label>Email:
-                <input type="email" id="cxEmail"></input>
+        <header class="header-login">
+          <img class="logo-login" src="../../img/raizen-logo.png" alt="raizen logo"/>
+        </header>    
+        <h3 class="title-login">Área de uso interno</h3>    
+        <form class="form-login">
+            <label class="label-login" for="login">Login
+                <input class="input-login" type="email" id="cxEmail"></input>
             </label>
-            <label>Senha:
-                <input type="password" id="cxPassword"></input>
+            <label class="label-login" for="password">Senha
+                <input class="input-login" type="password" id="cxPassword"></input>
             </label>
-            <button type="button"  id="btnEntrar">Entrar</button>            
+            <button class="btn-login" type="submit" id="btnEntrar">Entrar</button>            
         </form> 
 
     `
