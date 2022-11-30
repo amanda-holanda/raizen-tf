@@ -39,7 +39,9 @@ const info = () => {
             const template = `
             <div class="tabela-info-clients">   
                 <ul>                       
+
                 <!--<li>Sustentabilidade: ${item.sustentabilidade}</li>-->              
+
                 </ul>
             </div>
             `;

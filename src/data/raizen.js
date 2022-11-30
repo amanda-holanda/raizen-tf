@@ -1,48 +1,62 @@
-
 export default {
+
   "produtos": [
     {
       "cnpj": "75796555587850",
-      "periodo": "10-2022",
+      "periodo": "10/2022",
       "lote": "544",
+      "unidade": "COPI",
       "fazenda": {
-        "nome": "Parque de Bioenergia Gasa",
         "numero": "10",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
-          "certificacoes": "Bonsucro"
-        }
+          "certificacoes": "Bonsucro",
+        },
       },
-      "localização geografica": "Rio de Janeiro"
+      "zona": "1",
+      "talhao": "3",
+      "propriedade": "Nota de palha",
+      "localizacaoGeografica": "Rio de Janeiro-RJ",
+      "status": "Disponível",
     },
     {
       "cnpj": "75796555587851",
-      "periodo": "11-2022",
-      "lote": "322",
+      "periodo": "11/2022",
+      "lote": "CRISTAL_322",
+      "unidade": "COPI",
       "fazenda": {
-        "nome": "Parque de Bioenergia Serra",
         "numero": "20",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
-          "certificacoes": "Renovabio"
-        }
+          "certificacoes": "Renovabio",
+        },
       },
-      "localização geografica": "São Paulo"
+      "zona": "2",
+      "talhao": "5",
+      "propriedade": "CDC",
+      "localizacaoGeografica": "São Paulo-SP",
+      "status": "Utilizado",
 
     },
     {
       "cnpj": "75796555587852",
-      "periodo": "12-2022",
+      "periodo": "12/2022",
       "lote": "724",
+      "unidade": "XYZ",
       "fazenda": {
         "nome": "Parque de Bioenergia Benálcool",
         "numero": "30",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
-          "certificacoes": "ELO"
-        }
+          "certificacoes": "ELO",
+        },
       },
-      "localização geografica": "Minas Gerais"
+      "zona": "3",
+      "talhao": "4",
+      "propriedade": "CDC/Nota de Palha",
+      "localizacaoGeografica": "Minas Gerais-MG",
+      "status": "Disponível",
     }
   ]
+
 }

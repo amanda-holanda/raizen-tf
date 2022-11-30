@@ -1,9 +1,8 @@
-export default {
- "infos": [
+import raizen from '../../data/raizen.js';
 
-        {
-            "fazenda": "Fazenda Santa Maria"
+export const filterData = (data, criteria, value) => 
+    data.filter(obj => {
+        return obj[criteria] === value
+    });
 
-        }
-    ]
-};
+
