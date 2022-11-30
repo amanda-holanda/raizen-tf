@@ -2,6 +2,7 @@ import home from './pages/home/index.js'
 import info from './pages/info-clients/index.js';
 import login from './pages/login/index.js';
 import tabela from './pages/tabela-inter/index.js';
+import fazenda from './pages/info-clients/fazenda.js';
 
 const main = document.querySelector('#root');
 
@@ -22,6 +23,9 @@ const changeHash = () => {
     case '#tabela':
       main.appendChild(tabela());
       break; 
+    case '#fazenda':
+      main.appendChild(fazenda());
+      break;
     default: main.appendChild(home());
   }
 };
