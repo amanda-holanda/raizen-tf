@@ -30,5 +30,4 @@ const info = () => {
     return container;
 }
 
-
 export default info;
