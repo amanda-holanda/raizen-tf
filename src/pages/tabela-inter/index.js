@@ -1,20 +1,22 @@
 import { filterData } from '../../data/data.js';
-import raizen from '../../data/raizen.js';
-import produtos from '../../data/raizen.js';
+import database from '../../data/raizen.js';
 
 const tabela = () => {
     const container = document.createElement('div');
     const template = `
         <form>
-            <select name="unidade" id="unidade">
+            <select class="select-unidade" name="unidade" id="unidade">
+            <option value="unidade">unidade</option>
             <option value="COPI">COPI</option>
+            <option value="XYZ">XYZ</option>
             </select>
-            <select name="fazenda" id="fazenda">
+            <select class="select-fazenda" name="fazenda" id="fazenda">
+                <option value="fazenda">fazenda</option>
                 <option value="10">10</option>
                 <option value="20">20</option>
                 <option value="30">30</option>
             </select>           
-            <select name="certificacoes" id="certificacoes">
+            <select class="select-certificacoes" name="certificacoes" id="certificacoes">
                 <option value="ELO">ELO</option>
                 <option value="Renovabio">Renovabio</option>
                 <option value="Bonsucro">Bonsucro</option>
@@ -28,12 +30,13 @@ const tabela = () => {
 
 
 
-const infos = produtos.produtos;
+const infos = database.produtos;
+let filterResult = infos;
 
 function printInfos(infos) {
         
         const raizenInfos = infos.map((item) => {
-            const templateTabela = `
+            return `
             <div class="tabela-internos">
              <table>
              <tr>
@@ -50,26 +53,24 @@ function printInfos(infos) {
              </tr>
              </table>            
             `;
-            
-            container.innerHTML += templateTabela;
+        
         });
     
-     return raizenInfos.join("");
+     return container.innerHTML += raizenInfos.join("");
 }
 
-printInfos(infos)
-    
-const filterByUnidade = (e) => {
-    const UnidadeSelec = e.target.value;    
-    const filter = filterData (raizen.produtos, "unidade", UnidadeSelec);
-    printInfos(filter); 
-    console.log(filter);
- }
+// printInfos(infos)
 
-    const unidadeFilter = document.getElementById("unidade");
-    unidadeFilter.addEventListener("change", filterBySelect);   
+    const selectUnidade = container.querySelector(".select-unidade");
 
-    return container;
+    function printUnidadeFilter() {
+     filterResult = filterData (database.produtos, "unidade", selectUnidade.value);
+     return printInfos(filterResult); 
+    }
+
+     selectUnidade.addEventListener("change", printUnidadeFilter);     
+
+  return container;
 }
 
 export default tabela;
