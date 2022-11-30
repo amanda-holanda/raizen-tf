@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'dinpro';
+    src: url('../../font/dinpro.ttf') format('truetype');
+  }
+.info{
+    width: 100%;
+    height: 100%;
+    font-family: 'dinpro';
+}
+.header-info{
+    width: 100%;
+    height: 7.9rem;
+    background-image: url(../../img/acucar_raizen.png);
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 90px rgba(0,0,0,0.9); 
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitle-info{
+    width:100%;
+    height: 4rem;
+    background-color: white;
+    font-size: 0.8rem;
+    color: #781e77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-info{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faz-info, .local-info, .certfic-info, .curios-info{
+    width: 100%;
+    height: 8.6rem;
+    color: white;
+    border: none;
+}
+.faz-info{
+    background-color: #781E77;  
+}
+.local-info{
+    background-color: #EA368E;
+}
+.certfic-info{
+    background-color: #1FC0DA;
+}
+.curios-info{
+    background-color: #F47920;
+}
+
+
