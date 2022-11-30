@@ -5,11 +5,14 @@ const login = () => {
   container.classList.add('wrapper-login');
   const template = `
         <header class="header-login">
-          <a href="">
-            <img class="logo-login" src="img/raizen-logo.png" alt="raizen logo"/>
+          
+          <img class="logo-login" src="img/raizen-logo.png" alt="raizen logo"/>
+          
+          <a class="link-voltar-login" href="">
+            <img class="voltar-login" src="img/voltar.png" alt="voltar"/>
           </a>
         </header>    
-        <h3 class="title-login">Área de uso interno</h3>    
+        <h2 class="title-login">Área de uso interno</h2>    
         <form class="form-login">
             <label class="label-login" for="login">Login
                 <input class="input-login" type="email" id="cxEmail"></input>
