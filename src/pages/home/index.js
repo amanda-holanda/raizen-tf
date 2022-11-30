@@ -1,4 +1,3 @@
-
 import raizen from '../../data/raizen.js';
 
 const home = () => {
@@ -89,12 +88,6 @@ const home = () => {
     });
     
     
-    /*function dateFilter(dateData, firstDate){
-        return dateData >= firstDate;
-    }
-
-    console.log(dateFilter(dateData));*/
-
     firstDate.addEventListener('change', () => {
         console.log(firstDate.value)
         const dataFilter = filterData(infos, 'cnpj', cnpjInput.value);
@@ -108,9 +101,4 @@ const home = () => {
 }
 
 export default home;
-
-
-// - [X] - organização dos dados na tela: em tabela
-// - [X] - home : filtro do cnpj
-// - [] - filtro por periodos
 
