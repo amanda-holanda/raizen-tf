@@ -9,25 +9,24 @@ const tabela = () => {
     </div>
         <form class= tabela>
             <select class="select-unidade" name="unidade" id="unidade">
-            <option value="unidade">unidade</option>
+            <option value="unidade">Unidade</option>
             <option value="COPI">COPI</option>
             <option value="XYZ">XYZ</option>
             </select>
             <select class="select-fazenda" name="fazenda" id="fazenda">
-                <option value="fazenda">fazenda</option>
+                <option value="fazenda">Fazenda</option>
                 <option value="10">10</option>
                 <option value="20">20</option>
                 <option value="30">30</option>
             </select>           
             <select class="select-certificacoes" name="certificacoes" id="certificacoes">
-                <option value="certificacoes">certificações</option>
+                <option value="certificacoes">Certificações</option>
                 <option value="ELO">ELO</option>
                 <option value="Renovabio">Renovabio</option>
                 <option value="Bonsucro">Bonsucro</option>
                 <option value="ISCC">ISCC</option>
             </select>
         </form>
-        <button class="btn-clear">Limpar filtros</button>
         <div class="resultado-inter">
             <table class="tabela-inter">
                 <tr>
@@ -103,21 +102,16 @@ const tabela = () => {
 
     selectCertifica.addEventListener("change", printCertificaFilter);
 
-    function clear() {
-        filterResult = infos;
-        printInfos (filterResult);
-      }
+    // function clear() {
+    //     filterResult = infos;
+    //     printInfos (filterResult);
+    //   }
 
-    container.querySelector(".btn-clear").addEventListener("click", clear);
+    // container.querySelector(".btn-clear").addEventListener("click", clear);
     
 
     return container;
 }
 
+
 export default tabela;
-
-
-
-
-
-

@@ -86,7 +86,7 @@ export default {
         "numero": "30",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
-          "certificacoes": "ELO",
+          "certificacoes": "BonSucro",
         },
       },
       "zona": "3",
