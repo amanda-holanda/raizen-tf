@@ -1,5 +1,5 @@
 .wrapper-home {
-    border: 1px solid red;
+    border: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -7,36 +7,48 @@
 }
 
 .header-home {    
-    background-color: var(--roxo);    
+    background-color: var(--branco);    
     height: 20vh;    
-    display: flex;    
+    display: flex; 
+    flex-direction: row;   
     justify-content: right;
     align-items: end;
     width: 100%;
 }
 
 .logo-home {
-    height: 10vh;
-    position: fixed;
+    position: absolute;
+    height: 13vh;
     top:0;
     left: 0;    
     margin: 2%;
 }
 
 .links-home {
+    display: flex;
+    flex-flow: column wrap;
     text-decoration: none;
-    color: var(--branco);
+    color: var(--roxo);
+    font-weight: bold;
     margin: 1%;
+    font-size: 12px;
+}
+
+
+.material-symbols-outlined {
+    color: var(--roxo);
+    font-size: xx-large;
+    font-weight: 300;
+    padding-left: 31%;
+    padding-bottom: 5%;
 }
 
 .home-img {    
-    height: 100px;
     width: 100%;
     background: rgb(133, 184, 133);
 }
 
 .home-form {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     flex-direction: column;   
@@ -45,11 +57,20 @@
     align-items: center;
 }
 
+.description {
+    padding-right: 20%;
+    padding-left: 20%;
+    color: var(--roxo);
+}
+
 .label-cnpj {    
     width: 100%;
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: bolder;
+    color: #4A4A4A;
     text-align: center;
+    padding: 2%;
+    padding-top: 3%;
 }
 
 .cnpj-container {
@@ -59,38 +80,161 @@
 }
 
 .input-cnpj {
-    background-color: var(--cinza-claro);    
+    background-color: var(--cginza-claro);
+    padding: 5px;    
+    font-size: 16px;
     width: 100%;
     height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 .btn-buscar-cnpj {
-    width: 160px;
+    width: 290px;
     height: 50px;       
     background-color: var(--roxo);
     color: var(--branco);
     text-transform: uppercase;
     font-weight: bolder;
     cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: var(--azul);
+    color: white;
+    transition: all 0.2s;
+    transition-delay: 0.01s;
 }
 
 .periodo-container{
     width: 100%;    
     margin: 1% 0;
     text-align: center;
+    padding: 2%;
 }
 
 .bigclients-infos {
-    border: 3px solid orange;    
+    background-color: #f9f9f9;
     width: 100%;
-}
-#info-modal{
-    font-size: 2rem;
-    padding-bottom: 1rem;
-}
-#info-modal h1{
-    font-size: 3rem;
-    color: #f47920;
-    font-weight: bold;
+    display: none;
 }
 
+table{
+    width: 100%;
+    border-bottom: var(--cinza-claro);
+    color: #4A4A4A;
+
+}
+
+table, th{
+    padding: 3px;
+    }
+
+td{
+    border-bottom: 1px solid rgb(234, 234, 234);
+    padding: 1% 1% 1% 1%;
+    }
+
+.td-cnpj{
+    width: 15%;
+}
+
+.td-periodo{
+    width: 10%;
+    justify-content: center;
+}
+
+.td-lote{
+    width: 15%;
+}
+
+.td-fazenda{
+    width: 20%;
+}
+
+.td-zona{
+    width: 10%;
+}
+
+.td-talhao{
+    width: 20%;
+}
+
+.td-propriedade{
+    width: 15%;
+}
+
+tr:hover:nth-child(1n + 2) {
+    background-color: white;
+    color: f9f9f9;
+}
+
+
+#btn-modal {
+    color:#1fc0da;
+    background-color: #fff;
+    cursor:pointer;
+    font-size: 1.1rem;
+}
+
+#close-modal {
+    background-color: #ea368e;
+    padding: 0.6rem;
+    color:white
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    padding: 1.2rem;
+    z-index: 10;
+}
+
+#fade,
+#modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}

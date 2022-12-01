@@ -1,0 +1,55 @@
+.header-frase h1{
+    text-align: center;
+    font-family: 'dinpro';
+    src: url('../../font/dinpro.ttf') format('truetype');
+    font-size: 1.5rem;
+    color: var(--roxo);
+    margin: 6rem 0;
+    }
+
+    .select-unidade, .select-fazenda, .select-certificacoes{
+      font-family: 'dinpro';
+      src: url('../../font/dinpro.ttf') format('truetype');
+      text-align: center;
+      font-size: 1.5rem;
+      width: 20%;
+      border: 0.2px solid rgb(206, 204, 204);
+      margin: 0 1rem;
+      background-color: #F9F9F9;
+      padding: 0.5rem 0;
+    }
+  
+    .tabela{
+        text-align: center;
+      }    
+
+
+    .resultado-inter{
+      width: 100%;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .resultado-inter{
+      width: 100%;
+      height: 114vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    
+    }
+    
+    .tabela-inter{
+      width: 80%;
+    }
+    
+    .tabela-inter tr th{
+      padding: 1rem;
+    }
+    
+    #clientsInfosContainer tr td{
+      padding: 1.8rem 5.7rem;
+    }

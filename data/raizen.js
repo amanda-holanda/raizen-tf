@@ -39,6 +39,25 @@ export default {
 
     },
     {
+      "cnpj": "75796555587851",
+      "periodo": "2022-12-01",
+      "lote": "CRISTAL_788",
+      "unidade": "XYZ",
+      "fazenda": {
+        "numero": "40",
+        "atributos": {
+          "praticasEsg": "Trabalho regulamentado",
+          "certificacoes": "ISCC",
+        },
+      },
+      "zona": "2",
+      "talhao": "5",
+      "propriedade": "CDC",
+      "localizacaoGeografica": "São Paulo-SP",
+      "status": "Utilizado",
+
+    },
+    {
       "cnpj": "75796555587852",
       "periodo": "2022-12-01",
       "lote": "724",
@@ -67,7 +86,7 @@ export default {
         "numero": "30",
         "atributos": {
           "praticasEsg": "Trabalho regulamentado",
-          "certificacoes": "ELO",
+          "certificacoes": "BonSucro",
         },
       },
       "zona": "3",

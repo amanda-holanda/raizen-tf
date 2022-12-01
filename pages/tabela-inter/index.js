@@ -2,29 +2,42 @@ import database from '../../data/raizen.js';
 
 const tabela = () => {
     const container = document.createElement('div');
+    container.setAttribute("class", "main-inter");
     const template = `
-        <form>
+    <div class="header-frase">
+        <h1>Busque por Unidade, Fazenda ou Certificações</h1>
+    </div>
+        <form class= tabela>
             <select class="select-unidade" name="unidade" id="unidade">
-            <option value="unidade">unidade</option>
+            <option value="unidade">Unidade</option>
             <option value="COPI">COPI</option>
             <option value="XYZ">XYZ</option>
             </select>
             <select class="select-fazenda" name="fazenda" id="fazenda">
-                <option value="fazenda">fazenda</option>
+                <option value="fazenda">Fazenda</option>
                 <option value="10">10</option>
                 <option value="20">20</option>
                 <option value="30">30</option>
             </select>           
             <select class="select-certificacoes" name="certificacoes" id="certificacoes">
-                <option value="certificacoes">certificações</option>
+                <option value="certificacoes">Certificações</option>
                 <option value="ELO">ELO</option>
                 <option value="Renovabio">Renovabio</option>
                 <option value="Bonsucro">Bonsucro</option>
                 <option value="ISCC">ISCC</option>
             </select>
         </form>
-        <button class="btn-clear">Limpar filtros</button>
-        <div class="resultado"> </div>    
+        <div class="resultado-inter">
+            <table class="tabela-inter">
+                <tr>
+                    <th>Unidade</th>
+                    <th>Fazenda</th>
+                    <th>Certificações</th>
+                    <th>Práticas ESG</th>
+                </tr>                     
+            </table> 
+            <table id="clientsInfosContainer"></table>
+        </div>    
     `
 
     container.innerHTML = template;
@@ -36,27 +49,18 @@ const tabela = () => {
 
         const raizenInfos = infos.map((item) => {
             return `
-            <div class="tabela-internos">
-                <table>
-                    <tr>
-                        <th>Unidade</th>
-                        <th>Fazenda</th>
-                        <th>Certificações</th>
-                        <th>Práticas ESG</th>
-                    </tr>
                     <tr>
                         <td>${item.unidade}</td>
                         <td>${item.fazenda.numero}</td>
                         <td>${item.fazenda.atributos.certificacoes}</td>
                         <td>${item.fazenda.atributos.praticasEsg}</td>
-                    </tr>
-                </table>  
-             </div>          
+                    </tr>  
+                    <hr>
             `;
 
         });
 
-        return container.querySelector(".resultado").innerHTML = raizenInfos.join("");
+        return container.querySelector("#clientsInfosContainer").innerHTML = raizenInfos.join("");
     }
 
     printInfos(infos)
@@ -98,21 +102,16 @@ const tabela = () => {
 
     selectCertifica.addEventListener("change", printCertificaFilter);
 
-    function clear() {
-        filterResult = infos;
-        printInfos (filterResult);
-      }
+    // function clear() {
+    //     filterResult = infos;
+    //     printInfos (filterResult);
+    //   }
 
-    container.querySelector(".btn-clear").addEventListener("click", clear);
+    // container.querySelector(".btn-clear").addEventListener("click", clear);
     
 
     return container;
 }
 
+
 export default tabela;
-
-
-
-
-
-
