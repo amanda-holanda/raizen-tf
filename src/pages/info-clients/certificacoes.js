@@ -11,10 +11,10 @@ const info = () => {
             <div class="main-info-certificacoes">
                 <h2>Certificações</h2>
                 <div class="certificacoes-img">
-                        <img src="../../img/certificado_bonsucro.png">
-                        <img src="../../img/certificado_renovabio.png">
-                        <img src="../../img/certificado_Elo.png">
-                        <img src="../../img/certificado_iscc.png">
+                        <img src="img/certificado_bonsucro.png">
+                        <img src="img/certificado_renovabio.png">
+                        <img src="img/certificado_Elo.png">
+                        <img src="img/certificado_iscc.png">
                     
                 </div>
             </div>
