@@ -9,7 +9,8 @@
 .header-home {    
     background-color: var(--branco);    
     height: 20vh;    
-    display: flex;    
+    display: flex; 
+    flex-direction: row;   
     justify-content: right;
     align-items: end;
     width: 100%;
@@ -23,18 +24,23 @@
     margin: 2%;
 }
 
-.info-icon{
-    height: 25%;
-}
-
-.inter-icon{
-    height: 25%;
-}
-
 .links-home {
+    display: flex;
+    flex-flow: column wrap;
     text-decoration: none;
-    color: #82858a;
+    color: var(--roxo);
+    font-weight: bold;
     margin: 1%;
+    font-size: 12px;
+}
+
+
+.material-symbols-outlined {
+    color: var(--roxo);
+    font-size: xx-large;
+    font-weight: 300;
+    padding-left: 31%;
+    padding-bottom: 5%;
 }
 
 .home-img {    
@@ -51,7 +57,7 @@
     align-items: center;
 }
 
-.description{
+.description {
     padding-right: 20%;
     padding-left: 20%;
     color: var(--roxo);
@@ -64,6 +70,7 @@
     color: #4A4A4A;
     text-align: center;
     padding: 2%;
+    padding-top: 3%;
 }
 
 .cnpj-container {
@@ -73,11 +80,12 @@
 }
 
 .input-cnpj {
-    background-color: var(--cinza-claro);
+    background-color: var(--cginza-claro);
     padding: 5px;    
     font-size: 16px;
     width: 100%;
     height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 .btn-buscar-cnpj {
@@ -91,6 +99,13 @@
     
 }
 
+button:hover {
+    background-color: var(--azul);
+    color: white;
+    transition: all 0.2s;
+    transition-delay: 0.01s;
+}
+
 .periodo-container{
     width: 100%;    
     margin: 1% 0;
@@ -101,27 +116,56 @@
 .bigclients-infos {
     background-color: #f9f9f9;
     width: 100%;
+    /* display: none; */
 }
 
 table{
     width: 100%;
-    text-align: center;
-    font-family: Verdana, sans-serif;
     border-bottom: var(--cinza-claro);
+    /* border-collapse: collapse; */
     color: #4A4A4A;
+
 }
 
-table, td{
-    border-collapse: collapse;
-    border-bottom: 1px solid rgb(234, 234, 234)
+table, th{
+    padding: 3px;
     }
 
-.tabela-title{
+td{
+    border-bottom: 1px solid rgb(234, 234, 234);
+    padding: 1% 1% 1% 1%;
+    }
 
-    color: #f9f9f9;
+.td-cnpj{
+    width: 15%;
+}
+
+.td-periodo{
+    width: 10%;
+    justify-content: center;
+}
+
+.td-lote{
+    width: 15%;
+}
+
+.td-fazenda{
+    width: 20%;
+}
+
+.td-zona{
+    width: 10%;
+}
+
+.td-talhao{
+    width: 20%;
+}
+
+.td-propriedade{
+    width: 15%;
 }
 
 tr:hover:nth-child(1n + 2) {
-    background-color: #82858a;
+    background-color: white;
     color: f9f9f9;
     }
