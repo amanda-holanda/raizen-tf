@@ -3,11 +3,11 @@ const info = () => {
     container.setAttribute("class","info");
     const template = `
         <div class="header-info">
-            <img class="img-acucar" src="img/header-açúcar.png" alt="acucar imagem">
-            <button class="btn-voltar">Voltar</button>
+            <img class="img-acucar" src="img/header-açúcar.png" alt="acucar imagem">            
         </div>
         <div class="subtitle-info">
             <h2>Conheça a origem desse produto</h2>
+            <button class="btn-voltar">Voltar</button>
         </div>
             <div class="main-info-certificacoes">
                 <h2>Certificações</h2>

@@ -36,10 +36,9 @@
     top: 5px;
 }
 
-
 .subtitle-info{
     width:100%;
-    height: 4rem;
+    height: 6rem;
     background-color: white;
     font-size: 0.8rem;
     color: #781e77;
@@ -151,8 +150,11 @@
     border: none;
     cursor:pointer;
     overflow: hidden;
-    color:#fff ;
+    color:var(--roxo);
     position: absolute;
     right: 5px;
-    top: 100px;
+    top: 195px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
