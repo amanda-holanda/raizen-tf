@@ -72,7 +72,7 @@
 .main-info{
     background-color: #781E77;
     width: 100%;
-    height: 100vh;
+  
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,6 @@
 .main-info-localidade{
     background-color: #EA368E;
     width: 100%;
-    height: 74vh;
     color: #fff;
 }
 
@@ -155,4 +154,34 @@
 
 .btn-voltar:hover, .faz-info:hover, .local-info:hover, .certfic-info:hover, .curios-info:hover{
     opacity: 0.8;
+}
+@media only screen and (min-width: 480px){
+    .header-info{
+    height: 10rem;
+}
+}
+@media only screen and (min-width: 620px){
+    .header-info{
+    height: 12rem;
+}
+}
+@media only screen and (min-width: 770px){
+    .header-info{
+    height: 15rem;
+}
+}
+@media only screen and (min-width: 870px){
+    .header-info{
+    height: 17rem;
+}
+}
+@media only screen and (min-width: 1100px){
+    .header-info{
+    height: 20rem;
+}
+}
+@media only screen and (min-width: 1300px){
+    .header-info{
+    height: 27rem;
+}
 }
