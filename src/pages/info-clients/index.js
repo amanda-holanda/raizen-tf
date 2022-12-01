@@ -1,12 +1,9 @@
-import dataSmallClients from "../../data/dataSmallClients.js";
-
 const info = () => {
     const container = document.createElement('section');
     container.setAttribute("class","info");
     const template = `
         <div class="header-info">
-            <!--<img src="../../img/logobandeirinha.png">-->
-            <h1>Açúcar</h1>
+        <img class="img-acucar" src="img/header-açúcar.png" alt="acucar imagem">
         </div>
         <div class="subtitle-info">
             <h2>Conheça a origem desse produto</h2>
@@ -18,38 +15,34 @@ const info = () => {
             <button class="curios-info">Curiosidades</button>
         <div>
 
-        <section class="smallclients-infos" id="smallClientsInfosContainer"></section>  
-   
-    
     `
 
     container.innerHTML = template;
     const fazendaInfo = container.querySelector('.faz-info');
+    const localidadeInfo = container.querySelector('.local-info');
+    const certificacoesInfo = container.querySelector('.certfic-info');
+    const curiosidadesInfo = container.querySelector('.curios-info');
 
     fazendaInfo.addEventListener('click', fazendaTemplate)
+    localidadeInfo.addEventListener('click', localidadeTemplate)
+    certificacoesInfo.addEventListener('click', certificacoesTemplate)
+    curiosidadesInfo.addEventListener('click', curiosidadesTemplate)
 
     function fazendaTemplate (){
-        console.log("foii")
         window.location.hash = '#fazenda';
     }
-    const infos = dataSmallClients.infos;
 
-    function displaySmallClientsInfos(infos) {
-         const arraySmallClientsInfos = infos.map((item) => {
-            const template = `
-            <div class="tabela-info-clients">   
-                <ul>                       
-
-                <!--<li>Sustentabilidade: ${item.sustentabilidade}</li>-->              
-
-                </ul>
-            </div>
-            `;
-            return template;
-        });
-        return arraySmallClientsInfos.join("");
+    function localidadeTemplate (){
+        window.location.hash = '#localidade';
     }
-    container.querySelector('#smallClientsInfosContainer').innerHTML = displaySmallClientsInfos(infos);
+
+    function certificacoesTemplate (){
+        window.location.hash = '#certificacoes';
+    }
+
+    function curiosidadesTemplate (){
+        window.location.hash = '#curiosidades';
+    }
 
     return container;
 }

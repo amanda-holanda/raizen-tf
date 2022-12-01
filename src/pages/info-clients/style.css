@@ -11,18 +11,26 @@
 .header-info{
     width: 100%;
     height: 7.9rem;
-    background-image: url(../../img/acucar_raizen.png);
-    background-repeat: no-repeat;
-    box-shadow: inset 0px 0px 90px rgba(0,0,0,0.9); 
-    color: white;
-    font-size: 1.5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;    
 }
+
+.img-acucar {
+    object-fit: cover;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.bandeirinha{
+    width: 150px;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+}
+
 .subtitle-info{
     width:100%;
-    height: 4rem;
+    height: 6rem;
     background-color: white;
     font-size: 0.8rem;
     color: #781e77;
@@ -30,6 +38,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .buttons-info{
     width: 100%;
     height: 80%;
@@ -37,12 +46,16 @@
     flex-direction: column;
     align-items: center;
 }
+
 .faz-info, .local-info, .certfic-info, .curios-info{
+    font-size: 1.3rem;
     width: 100%;
     height: 8.6rem;
     color: white;
     border: none;
+    cursor: pointer;
 }
+
 .faz-info{
     background-color: #781E77;  
 }
@@ -56,4 +69,90 @@
     background-color: #F47920;
 }
 
+.main-info{
+    background-color: #781E77;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
 
+.img-fazenda { 
+    object-fit: cover;;
+}
+
+.main-info h2, .main-info-localidade h2, .main-info-curiosidades h2{
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-info p, .main-info-localidade p, .main-info-curiosidades p{
+    padding: 0 1.5rem 0.8rem 1.5rem ;
+}
+
+.main-info-localidade{
+    background-color: #EA368E;
+    width: 100%;
+    height: 74vh;
+    color: #fff;
+}
+
+.main-info-certificacoes{
+    background-color: #1FC0DA;
+    width: 100%;
+    height: 74vh;
+}
+
+.main-info-certificacoes h2{
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.certificacoes-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 20rem;
+}
+
+.certificacoes-img img{
+    width: 9rem;
+    height: 8rem;
+}
+
+
+.main-info-curiosidades{
+    background-color: #F47920;
+    width: 100%;
+    height: 74vh;
+    color: #fff;
+}
+
+.btn-retornar{
+    display: flex;
+}
+
+.btn-voltar {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color:var(--roxo);
+    position: absolute;
+    right: 5px;
+    top: 200px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+
+.btn-voltar:hover, .faz-info:hover, .local-info:hover, .certfic-info:hover, .curios-info:hover{
+    opacity: 0.8;
+}
