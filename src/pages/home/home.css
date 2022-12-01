@@ -84,4 +84,13 @@
     border: 3px solid orange;    
     width: 100%;
 }
+#info-modal{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+#info-modal h1{
+    font-size: 3rem;
+    color: #f47920;
+    font-weight: bold;
+}
 
