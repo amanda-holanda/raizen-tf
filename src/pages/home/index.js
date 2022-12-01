@@ -98,7 +98,7 @@ const home = () => {
     function displayModal(infos) {
         const arrayModalElement = infos.map((item) => {
             const template = `  
-                <h1>Certificações:${item.fazenda.atributos.certificacoes}</h1>
+                <h1>Certificações: ${item.fazenda.atributos.certificacoes}</h1>
                 <p>Atributos: ${item.fazenda.atributos.praticasEsg}</p>     
                 <p>Localização geográfica: ${item.localizacaoGeografica}</p>     
                                       

@@ -164,15 +164,22 @@
     .header-info{
     height: 12rem;
 }
+    
 }
 @media only screen and (min-width: 770px){
     .header-info{
     height: 15rem;
 }
+    .img-fazenda{
+    display: none;
+}
 }
 @media only screen and (min-width: 870px){
     .header-info{
     height: 17rem;
+}
+    .btn-voltar{
+    top: 500px;
 }
 }
 @media only screen and (min-width: 1100px){
