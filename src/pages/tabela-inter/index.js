@@ -2,8 +2,12 @@ import database from '../../data/raizen.js';
 
 const tabela = () => {
     const container = document.createElement('div');
+    container.setAttribute("class", "main-inter");
     const template = `
-        <form>
+    <div class="header-frase">
+        <h1>Busque por Unidade, Fazenda ou Certificações</h1>
+    </div>
+        <form class= tabela>
             <select class="select-unidade" name="unidade" id="unidade">
             <option value="unidade">unidade</option>
             <option value="COPI">COPI</option>
@@ -24,7 +28,17 @@ const tabela = () => {
             </select>
         </form>
         <button class="btn-clear">Limpar filtros</button>
-        <div class="resultado"> </div>    
+        <div class="resultado-inter">
+            <table class="tabela-inter">
+                <tr>
+                    <th>Unidade</th>
+                    <th>Fazenda</th>
+                    <th>Certificações</th>
+                    <th>Práticas ESG</th>
+                </tr>                     
+            </table> 
+            <table id="clientsInfosContainer"></table>
+        </div>    
     `
 
     container.innerHTML = template;
@@ -36,27 +50,18 @@ const tabela = () => {
 
         const raizenInfos = infos.map((item) => {
             return `
-            <div class="tabela-internos">
-                <table>
-                    <tr>
-                        <th>Unidade</th>
-                        <th>Fazenda</th>
-                        <th>Certificações</th>
-                        <th>Práticas ESG</th>
-                    </tr>
                     <tr>
                         <td>${item.unidade}</td>
                         <td>${item.fazenda.numero}</td>
                         <td>${item.fazenda.atributos.certificacoes}</td>
                         <td>${item.fazenda.atributos.praticasEsg}</td>
-                    </tr>
-                </table>  
-             </div>          
+                    </tr>  
+                    <hr>
             `;
 
         });
 
-        return container.querySelector(".resultado").innerHTML = raizenInfos.join("");
+        return container.querySelector("#clientsInfosContainer").innerHTML = raizenInfos.join("");
     }
 
     printInfos(infos)
