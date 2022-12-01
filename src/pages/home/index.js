@@ -6,7 +6,7 @@ const home = () => {
     const template = `       
         <header class="header-home">
             <a href="" class="links-home">
-                <img class="logo-home" src="../../img/raizenlogoroxo.png" alt="raizen logo"/>
+                <img class="logo-home" src="img/raizenlogoroxo.png" alt="raizen logo"/>
             </a>               
             <a href="#info" class="links-home">
                 <span class="material-symbols-outlined">
@@ -19,7 +19,7 @@ const home = () => {
                 </span>LOGIN INTERNO
             </a>
         </header>         
-        <img class="home-img" src="../../img/homeimg.png" alt="saco de açucar"/>        
+        <img class="home-img" src="img/homeimg.png" alt="saco de açucar"/>        
         <form class="home-form">
             <p class="description">
                 Nessa plataforma, você pode acessar mais informações sobre nosso <b>produto</b>, sua <b>origem</b>, <b>informações geográficas</b> e <b>atributos de sustentabilidade</b>.
