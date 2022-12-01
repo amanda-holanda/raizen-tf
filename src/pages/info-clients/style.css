@@ -13,14 +13,16 @@
     height: 7.9rem;
     background-image: url(../../img/header-açúcar.png);
     background-repeat: no-repeat;
-    box-shadow: inset 0px 0px 60px rgba(0,0,0,0.9); 
-    color: white;
+    box-shadow: inset 0px 0px 60px rgba(0,0,0,0.9);   
+    background-size: cover;
+    /*color: white;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: flex-end;
+    align-self: flex-end;*/
 }
+
 .bandeirinha{
     width: 150px;
     position: fixed;
@@ -39,6 +41,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .buttons-info{
     width: 100%;
     height: 80%;
@@ -72,6 +75,12 @@
     width: 100%;
     height: 100vh;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-fazenda { 
+    object-fit: cover;;
 }
 
 .main-info h2, .main-info-localidade h2, .main-info-curiosidades h2{
