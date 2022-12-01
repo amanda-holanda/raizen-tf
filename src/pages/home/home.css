@@ -1,5 +1,5 @@
 .wrapper-home {
-    border: 1px solid red;
+    border: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -7,7 +7,7 @@
 }
 
 .header-home {    
-    background-color: var(--roxo);    
+    background-color: var(--branco);    
     height: 20vh;    
     display: flex;    
     justify-content: right;
@@ -16,27 +16,33 @@
 }
 
 .logo-home {
-    height: 10vh;
-    position: fixed;
+    position: absolute;
+    height: 13vh;
     top:0;
     left: 0;    
     margin: 2%;
 }
 
+.info-icon{
+    height: 25%;
+}
+
+.inter-icon{
+    height: 25%;
+}
+
 .links-home {
     text-decoration: none;
-    color: var(--branco);
+    color: #82858a;
     margin: 1%;
 }
 
 .home-img {    
-    height: 100px;
     width: 100%;
     background: rgb(133, 184, 133);
 }
 
 .home-form {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     flex-direction: column;   
@@ -45,11 +51,19 @@
     align-items: center;
 }
 
+.description{
+    padding-right: 20%;
+    padding-left: 20%;
+    color: var(--roxo);
+}
+
 .label-cnpj {    
     width: 100%;
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: bolder;
+    color: #4A4A4A;
     text-align: center;
+    padding: 2%;
 }
 
 .cnpj-container {
@@ -59,29 +73,55 @@
 }
 
 .input-cnpj {
-    background-color: var(--cinza-claro);    
+    background-color: var(--cinza-claro);
+    padding: 5px;    
+    font-size: 16px;
     width: 100%;
     height: 50px;
 }
 
 .btn-buscar-cnpj {
-    width: 160px;
+    width: 290px;
     height: 50px;       
     background-color: var(--roxo);
     color: var(--branco);
     text-transform: uppercase;
     font-weight: bolder;
     cursor: pointer;
+    
 }
 
 .periodo-container{
     width: 100%;    
     margin: 1% 0;
     text-align: center;
+    padding: 2%;
 }
 
 .bigclients-infos {
-    border: 3px solid orange;    
+    background-color: #f9f9f9;
     width: 100%;
 }
 
+table{
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    border-bottom: var(--cinza-claro);
+    color: #4A4A4A;
+}
+
+table, td{
+    border-collapse: collapse;
+    border-bottom: 1px solid rgb(234, 234, 234)
+    }
+
+.tabela-title{
+
+    color: #f9f9f9;
+}
+
+tr:hover:nth-child(1n + 2) {
+    background-color: #82858a;
+    color: f9f9f9;
+    }
