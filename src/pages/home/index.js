@@ -39,18 +39,13 @@ const home = () => {
             </table> 
             <table id="bigClientsInfosContainer"></table>
 
-            <div class="w3-container">
-  
-    <div id="id01" class="w3-modal">
-      <div class="w3-modal-content w3-animate-bottom">
-        <div class="w3-container">
-          <span onclick="document.getElementById('id01').style.display='none'"
-            class="w3-button w3-display-topright">&times;</span>
-            <div id="info-modal"></div>
-        </div>
-      </div>
-    </div>
-  </div> 
+            <div class="hide" id="fade"></div>
+            <div class="hide" id="modal">
+            <div class="modal-header">
+                <button id="close-modal">fechar</button>
+            </div>
+                <div id="info-modal"></div>
+            </div>
 
         </section>  
     
@@ -71,7 +66,7 @@ const home = () => {
                 <tr>                                     
                     <td>${item.cnpj}</td>
                     <td>${item.lote}</td>
-                   <td><button  id="btn-modal" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white">${item.fazenda.numero}</button></td>
+                   <td><button  id="btn-modal">${item.fazenda.numero}</button></td>
                     <td>${item.zona}</td>
                     <td>${item.talhao}</td>
                     <td>${item.propriedade}</td>
@@ -115,13 +110,22 @@ const home = () => {
         bigClientsInfosContainer.innerHTML = displayBigClientsInfos
         (dataFilter);
 
-        const btnModal = container.querySelector('#btn-modal');
+        const btnOpenModal = container.querySelector('#btn-modal');
+        const btnCloseModal =container.querySelector('#close-modal');
+        const modal = container.querySelector('#modal');
+        const fade = container.querySelector('#fade');
+        
+        const toggleModal = () =>{
+            modal.classList.toggle('hide');
+            fade.classList.toggle('hide');
+        }
 
-        btnModal.addEventListener('click',(e) =>{
-            infoModal.innerHTML = displayModal(dataFilter);
-           
+        [btnOpenModal,btnCloseModal,fade].forEach((el) =>{
+            el.addEventListener('click',(e) =>{
+                toggleModal()
+                infoModal.innerHTML = displayModal(dataFilter);
+            }) 
         })
-
     });
     
     
