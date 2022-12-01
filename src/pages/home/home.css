@@ -80,7 +80,7 @@
 }
 
 .input-cnpj {
-    background-color: var(--cginza-claro);
+    background-color: var(--cinza-claro);
     padding: 5px;    
     font-size: 16px;
     width: 100%;
@@ -116,13 +116,12 @@ button:hover {
 .bigclients-infos {
     background-color: #f9f9f9;
     width: 100%;
-    /* display: none; */
+    display: none;
 }
 
 table{
     width: 100%;
     border-bottom: var(--cinza-claro);
-    /* border-collapse: collapse; */
     color: #4A4A4A;
 
 }
