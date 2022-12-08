@@ -102,14 +102,6 @@ const tabela = () => {
 
     selectCertifica.addEventListener("change", printCertificaFilter);
 
-    // function clear() {
-    //     filterResult = infos;
-    //     printInfos (filterResult);
-    //   }
-
-    // container.querySelector(".btn-clear").addEventListener("click", clear);
-    
-
     return container;
 }
 

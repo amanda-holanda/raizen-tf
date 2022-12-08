@@ -110,12 +110,10 @@ const home = () => {
     }    
   
 
-    function filterData(infos, cnpj, cnpjInput) {
-        console.log(infos, cnpj, cnpjInput)
+    function filterData(infos, cnpj, cnpjInput) {        
         const filterCnpj = infos.filter(obj => {
             return obj[cnpj] === cnpjInput;
-        });
-        console.log(filterCnpj)
+        });       
 
         return filterCnpj;
     }
