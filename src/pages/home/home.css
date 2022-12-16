@@ -172,7 +172,7 @@ tr:hover:nth-child(1n + 2) {
 
 #btn-modal {
     color:#1fc0da;
-    background-color: #fff;
+    background-color: #f9f9f9;
     cursor:pointer;
     font-size: 1.1rem;
 }
