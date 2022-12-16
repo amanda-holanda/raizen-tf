@@ -63,7 +63,7 @@ A empresa Raízen nos desafiou a desenvolver uma solução de interface web volt
 
 Ao receber o desafio proposto, iniciamos o projeto faz elaborando um fluxograma do projeto e das telas da aplicação, com o objetivo de ter maior clareza durante o seu desenvolvimento. Para isso, utilizamos a ferramenta **Miro**.
 
-<img src="" alt="fluxograma">
+<img src="img/fluxograma.png" alt="fluxograma">
 
   
 ## 4. Planejamento
