@@ -54,7 +54,7 @@ Ao receber o desafio proposto, iniciamos o projeto faz elaborando um fluxograma 
   
 ## 3. Planejamento
 
-O planejamento foi realizado utilizando a ferramenta **Notion** e as **Metologias Ágeis**. Todas as tarefas foram organizadas em "babys steps" e dividas pelo grupo de desenvolvimento por ordem de prioridade.
+O planejamento foi realizado utilizando a ferramenta **Notion** e as **Metologias Ágeis**. Todas as tarefas foram organizadas em "babies steps" e dividas pelo grupo de desenvolvimento por ordem de prioridade.
 
 <img src="src/img/notion.png" alt="planejamento notion" style="height: 300px">
 
