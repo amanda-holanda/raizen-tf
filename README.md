@@ -62,7 +62,11 @@ O planejamento foi realizado utilizando a ferramenta **Notion** e as **Metologia
 
 Os protótipos foram desenvolvidos pensando: no guia de marca da empresa e na melhor experiência do usuário. Para o seu desenvolvimento, utilizou-se a ferramenta **Figma**.
 
-<img src="" alt="prototipos" />
+<img src="img/prototipo-1.png" alt="prototipos" />
+
+<img src="img/prototipo-2.png" alt="prototipos" />
+
+<img src="img/prototipo-3.png" alt="prototipos" />
 
 ## 5. Tecnologias Utilizadas
 
