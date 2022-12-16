@@ -36,24 +36,20 @@
 
 ## 1. Resumo do projeto
 
-Esse projeto foi desenvolvido durante o hackaton *Talent Fest* da [Laboratoria](https://github.com/Laboratoria).
-
+O projeto foi desenvolvido durante o hackaton *Talent Fest* da [Laboratoria](https://github.com/Laboratoria).
 A empresa Raízen nos desafiou a desenvolver uma solução de interface web voltada para três tipos de usuários diferentes:
-
   #### 1. Cliente final: este deveria visualizar informações sobre a origem do produto que ele consume (açúcar) de forma simples.
   #### 2. Clientes grandes da empresa: estes deveriam visualizar informações dos seus produtos através do seu CNPJ e do período da compra. 
   #### 3. Funcionários da empresa: estes deveriam visualizar informações detalhadas sobre as fazendas de cana de açúcar.
   
 As soluções desenvolvidas foram: 
-
-  #### 1. Cliente final: através de um QR code colocado na embalagem do produto que este consume (no caso, foi escolhi o açúcar), o cliente terá acesso a página com as informações do produto. 
+  #### 1. Cliente final: através de um QR code colocado na embalagem do produto que este consume (no caso, foi escolhido o açúcar), o cliente terá acesso a página com as informações do produto. 
   
 ## 2. Fluxograma
 
-Ao receber o desafio proposto, iniciamos o projeto faz elaborando um fluxograma do projeto e das telas da aplicação, com o objetivo de ter maior clareza durante o seu desenvolvimento. Para isso, utilizamos a ferramenta **Miro**.
+Ao receber o desafio proposto, iniciamos elaborando um fluxograma do projeto e das telas da aplicação, com o objetivo de ter maior clareza durante o seu desenvolvimento. Para isso, utilizamos a ferramenta **Miro**.
 
 <img src="src/img/fluxograma.png" alt="fluxograma" style="height: 300px">
-
   
 ## 3. Planejamento
 
@@ -71,13 +67,11 @@ Os protótipos foram desenvolvidos pensando: no guia de marca da empresa e na me
 
 ### Página dos grandes clientes:
 
-
 <img src="src/img/prototipo-3.png" alt="prototipos" style="height: 250px" />
 
 ### Páginas dos funcionários internos:
 
 <img src="src/img/prototipo-2.png" alt="prototipos" style="height: 250px" />
-
 
 ## 5. Tecnologias Utilizadas
 
