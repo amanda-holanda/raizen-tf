@@ -41,10 +41,13 @@ Esse projeto foi desenvolvido durante o hackaton *Talent Fest* da [Laboratoria](
 A empresa Raízen nos desafiou a desenvolver uma solução de interface web voltada para três tipos de usuários diferentes:
 
   #### 1. Cliente final: este deveria visualizar informações sobre a origem do produto que ele consume (açúcar) de forma simples.
-  #### 2. Clientes grandes da empresa: este deveria visualizar informações dos seus produtos através do seu CNPJ e do período da compra. 
+  #### 2. Clientes grandes da empresa: estes deveriam visualizar informações dos seus produtos através do seu CNPJ e do período da compra. 
   #### 3. Funcionários da empresa: estes deveriam visualizar informações detalhadas sobre as fazendas de cana de açúcar.
+  
+As soluções desenvolvidas foram: 
 
-
+  #### 1. Cliente final: através de um QR code colocado na embalagem do produto que este consume (no caso, foi escolhi o açúcar), o cliente terá acesso a página com as informações do produto. 
+  
 ## 2. Fluxograma
 
 Ao receber o desafio proposto, iniciamos o projeto faz elaborando um fluxograma do projeto e das telas da aplicação, com o objetivo de ter maior clareza durante o seu desenvolvimento. Para isso, utilizamos a ferramenta **Miro**.
