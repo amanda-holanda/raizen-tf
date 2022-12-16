@@ -36,7 +36,7 @@
 
 ## 1. Resumo do projeto
 
-Esse projeto foi desenvolvido durante o hackaton "Talent Fest" da @Laboratoria.
+Esse projeto foi desenvolvido durante o hackaton "Talent Fest" da [Laboratoria](https://github.com/Laboratoria).
 
 A empresa Raízen nos desafiou a desenvolver uma solução de interface web voltada para três tipos de usuários diferentes:
 
@@ -78,7 +78,7 @@ Os protótipos foram desenvolvidos pensando: no guia de marca da empresa e na me
 
 <img src="" alt="prototipos" />
 
-3. Sobre as desenvolvedoras
+## 3. Sobre as desenvolvedoras
 
 Projeto desenvolvido em equipe por: 
 * Amanda Holanda: [Linkedin](https://www.linkedin.com/in/amandaholanda/) | [GitHub](https://github.com/amanda-holanda)
