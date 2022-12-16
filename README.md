@@ -49,24 +49,32 @@ A empresa Raízen nos desafiou a desenvolver uma solução de interface web volt
 
 Ao receber o desafio proposto, iniciamos o projeto faz elaborando um fluxograma do projeto e das telas da aplicação, com o objetivo de ter maior clareza durante o seu desenvolvimento. Para isso, utilizamos a ferramenta **Miro**.
 
-<img src="img/fluxograma.png" alt="fluxograma">
+<img src="src/img/fluxograma.png" alt="fluxograma" style="height: 300px">
 
   
 ## 3. Planejamento
 
 O planejamento foi realizado utilizando a ferramenta **Notion** e as **Metologias Ágeis**. Todas as tarefas foram organizadas em "babys steps" e dividas pelo grupo de desenvolvimento por ordem de prioridade.
 
-<img src="img/notion.png" alt="planejamento notion">
+<img src="src/img/notion.png" alt="planejamento notion" style="height: 300px">
 
 ## 4. Protótipos
 
 Os protótipos foram desenvolvidos pensando: no guia de marca da empresa e na melhor experiência do usuário. Para o seu desenvolvimento, utilizou-se a ferramenta **Figma**.
 
-<img src="img/prototipo-1.png" alt="prototipos" />
+### Página do cliente final:
 
-<img src="img/prototipo-2.png" alt="prototipos" />
+<img src="src/img/prototipo-1.png" alt="prototipos" style="height: 250px"/>
 
-<img src="img/prototipo-3.png" alt="prototipos" />
+### Página dos grandes clientes:
+
+
+<img src="src/img/prototipo-3.png" alt="prototipos" style="height: 250px" />
+
+### Páginas dos funcionários internos:
+
+<img src="src/img/prototipo-2.png" alt="prototipos" style="height: 250px" />
+
 
 ## 5. Tecnologias Utilizadas
 
