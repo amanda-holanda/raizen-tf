@@ -45,13 +45,13 @@ A empresa Raízen nos desafiou a desenvolver uma solução de interface web volt
   
   #### 2. Clientes grandes: 
   Estes deveriam visualizar informações dos seus produtos através do seu CNPJ e do período da compra. Para visualizar melhor os dados, na página principal preencha os campos da seguinte forma:
-  **CNPJ: 75796555587851**
-  **Período: 01/12/22 - 31/12/2022**
+  * **CNPJ:** 75796555587851
+  * **Período:** 01/12/22 - 31/12/2022
   
   #### 3. Funcionários da empresa: 
   Estes deveriam visualizar informações detalhadas sobre as fazendas de cana de açúcar. Para ter acesso ao login, insira os seguintes dados:
-  **email: maria@raizen.com.br**
-  **senha: raizen1234**
+  * **email:** maria@raizen.com.br
+  * **senha:** raizen1234
    
 ## 2. Fluxograma
 
@@ -67,7 +67,7 @@ O planejamento foi realizado utilizando a ferramenta **Notion** e as **Metologia
 
 ## 4. Protótipos
 
-Os protótipos foram desenvolvidos pensando: no guia de marca da empresa e na melhor experiência do usuário. Para o seu desenvolvimento, utilizou-se a ferramenta **Figma**.
+Os protótipos foram desenvolvidos pensando no guia de marca da empresa e na melhor experiência do usuário. Para o seu desenvolvimento, utilizou-se a ferramenta **Figma**.
 
 ### Página do cliente final:
 
