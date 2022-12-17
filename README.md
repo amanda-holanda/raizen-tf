@@ -43,7 +43,14 @@ A empresa Raízen nos desafiou a desenvolver uma solução de interface web volt
   #### 3. Funcionários da empresa: estes deveriam visualizar informações detalhadas sobre as fazendas de cana de açúcar.
   
 As soluções desenvolvidas foram: 
-  #### 1. Cliente final: através de um QR code colocado na embalagem do produto que este consume (no caso, foi escolhido o açúcar), o cliente terá acesso a página com as informações do produto. 
+  #### 1. Cliente final: através de um QR code colocado na embalagem do produto que este consume (no caso, foi escolhido o açúcar), o cliente terá acesso a página com as informações do produto. Para visualizá-la no seu dispositivo móvel, é só acessá-la através do QR-Code abaixo:
+  
+  #### 2. Clientes grandes da empresa: para visualizar melhor os dados, na página principal preencha os campos da seguinte forma:
+  **CNPJ: **
+  **Período:**
+  #### 3. Funcionários da empresa: Para ter acesso ao login, insira os seguintes dados:
+  **email: maria@raizen.com.br**
+  **senha: raizen1234**
   
 ## 2. Fluxograma
 
@@ -86,6 +93,8 @@ Os protótipos foram desenvolvidos pensando: no guia de marca da empresa e na me
   - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height: 30px;"/> `Github`
 
   - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="height: 30px;"/>`Figma`
+  
+  - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" style="height: 30px;"/>`Firebase`
   
 ## 6. Sobre as desenvolvedoras
 
