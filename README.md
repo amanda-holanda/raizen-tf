@@ -44,6 +44,8 @@ A empresa Raízen nos desafiou a desenvolver uma solução de interface web volt
   
 As soluções desenvolvidas foram: 
   #### 1. Cliente final: através de um QR code colocado na embalagem do produto que este consume (no caso, foi escolhido o açúcar), o cliente terá acesso a página com as informações do produto. Para visualizá-la no seu dispositivo móvel, é só acessá-la através do QR-Code abaixo:
+
+  <img src="src/img/qrcode.png" alt="qrcode" />
   
   #### 2. Clientes grandes da empresa: para visualizar melhor os dados, na página principal preencha os campos da seguinte forma:
   **CNPJ: **
