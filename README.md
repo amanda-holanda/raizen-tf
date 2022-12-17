@@ -38,22 +38,18 @@
 
 O projeto foi desenvolvido durante o hackaton *Talent Fest* da [Laboratoria](https://github.com/Laboratoria).
 A empresa Raízen nos desafiou a desenvolver uma solução de interface web voltada para três tipos de usuários diferentes:
-  #### 1. Cliente final: este deveria visualizar informações sobre a origem do produto que ele consume (açúcar) de forma simples.
-  #### 2. Clientes grandes da empresa: estes deveriam visualizar informações dos seus produtos através do seu CNPJ e do período da compra. 
-  #### 3. Funcionários da empresa: estes deveriam visualizar informações detalhadas sobre as fazendas de cana de açúcar.
-  
-As soluções desenvolvidas foram: 
-  #### 1. Cliente final: através de um QR code colocado na embalagem do produto que este consume (no caso, foi escolhido o açúcar), o cliente terá acesso a página com as informações do produto. Para visualizá-la no seu dispositivo móvel, é só acessá-la através do QR-Code abaixo:
+  #### 1. Cliente final: este deveria visualizar informações sobre a origem do produto que ele consume (açúcar) de forma simples. Solução: através de um QR code colocado na embalagem do produto, o cliente tem acesso a página com as informações. Para visualizá-la no seu dispositivo móvel, é só acessá-la através do QR-Code abaixo:
 
   <img src="src/img/qrcode.png" alt="qrcode" style="height: 100px" />
   
-  #### 2. Clientes grandes da empresa: para visualizar melhor os dados, na página principal preencha os campos da seguinte forma:
-  **CNPJ: **
+  #### 2. Clientes grandes da empresa: estes deveriam visualizar informações dos seus produtos através do seu CNPJ e do período da compra. Para visualizar melhor os dados, na página principal preencha os campos da seguinte forma:
+  **CNPJ:**
   **Período:**
-  #### 3. Funcionários da empresa: Para ter acesso ao login, insira os seguintes dados:
+  
+  #### 3. Funcionários da empresa: estes deveriam visualizar informações detalhadas sobre as fazendas de cana de açúcar. Para ter acesso ao login, insira os seguintes dados:
   **email: maria@raizen.com.br**
   **senha: raizen1234**
-  
+   
 ## 2. Fluxograma
 
 Ao receber o desafio proposto, iniciamos elaborando um fluxograma do projeto e das telas da aplicação, com o objetivo de ter maior clareza durante o seu desenvolvimento. Para isso, utilizamos a ferramenta **Miro**.
