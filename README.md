@@ -39,9 +39,9 @@
 O projeto foi desenvolvido durante o hackaton *Talent Fest* da [Laboratoria](https://github.com/Laboratoria).
 A empresa Raízen nos desafiou a desenvolver uma solução de interface web voltada para três tipos de usuários diferentes:
   #### 1. Cliente final: 
-  Este deveria visualizar informações sobre a origem do produto que ele consume (açúcar) de forma simples. Solução: através de um QR code colocado na embalagem do produto, o cliente tem acesso a página com as informações. Para visualizá-la no seu dispositivo móvel, é só acessá-la através do QR-Code abaixo:
+  Este deveria visualizar informações sobre a origem do produto que ele consume (açúcar) de forma simples. Solução: através de um QR Code colocado na embalagem do produto, o cliente tem acesso a página com as informações. Para visualizá-la no seu dispositivo móvel, é só acessar abaixo:
 
-  <img src="src/img/qrcode.png" alt="qrcode" style="height: 100px" />
+  <img src="src/img/qrcode.png" alt="qrcode" style="height: 120px" />
   
   #### 2. Clientes grandes: 
   Estes deveriam visualizar informações dos seus produtos através do seu CNPJ e do período da compra. Para visualizar melhor os dados, na página principal preencha os campos da seguinte forma:
