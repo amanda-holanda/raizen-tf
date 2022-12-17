@@ -50,8 +50,8 @@ A empresa Raízen nos desafiou a desenvolver uma solução de interface web volt
   
   #### 3. Funcionários da empresa: 
   Estes deveriam visualizar informações detalhadas sobre as fazendas de cana de açúcar. Para ter acesso ao login, insira os seguintes dados:
-  * **email:** maria@raizen.com.br
-  * **senha:** raizen1234
+  * **Email:** maria@raizen.com.br
+  * **Senha:** raizen1234
    
 ## 2. Fluxograma
 
