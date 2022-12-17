@@ -75,7 +75,7 @@ Os protótipos foram desenvolvidos pensando: no guia de marca da empresa e na me
 
 ### Página dos grandes clientes:
 
-<img src="src/img/prototipo-3.png" alt="prototipos" style="height: 250px" />
+<img src="src/img/prototipo-3.png" alt="prototipos" style="height: 200px" />
 
 ### Páginas dos funcionários internos:
 
