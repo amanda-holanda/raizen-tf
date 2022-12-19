@@ -1,19 +1,20 @@
 @import url('./pages/home/home.css');
 @import url('./pages/login/login.css');
+
 @font-face {
   font-family: 'dinpro';
   src: url('../../font/dinpro.ttf') format('truetype');
 }
 
 * {
-    margin: 0;
-    padding: 0;    
-    border: 0;
-    box-sizing: border-box;   
-    font-family: 'dinpro'; 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'dinpro';
 }
 
-:root {    
+:root {
   --branco: #FFFFFF;
   --roxo: #781E77;
   --azul: #1fc0da;
@@ -24,19 +25,22 @@
 }
 
 body,
-html {  
-  background-color: var(--branco);  
+html {
+  background-color: var(--branco);
 }
 
+/*
 .main {
   width: 100%;
   height: 100%;
   position: absolute; 
   margin: 0 0 0 0;  
-}
+}*/
 
-textarea:focus, input:focus, select:focus {
-  box-shadow: 0 0 0 0;
-  border: 0 none;
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0;
+  border: 0;
   outline: 0;
 }

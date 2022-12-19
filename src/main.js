@@ -21,11 +21,11 @@ const changeHash = () => {
       main.appendChild(info());
       break;
     case '#login':
-        main.appendChild(login());
-        break;
+      main.appendChild(login());
+      break;
     case '#tabela':
       main.appendChild(tabela());
-      break; 
+      break;
     case '#fazenda':
       main.appendChild(fazenda());
       break;
@@ -35,7 +35,7 @@ const changeHash = () => {
     case '#certificacoes':
       main.appendChild(certificacoes());
       break;
-      case '#curiosidades':
+    case '#curiosidades':
       main.appendChild(curiosidades());
       break;
     default: main.appendChild(home());
