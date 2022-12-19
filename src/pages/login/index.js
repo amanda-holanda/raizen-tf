@@ -1,4 +1,4 @@
-import {loginEmailPassword} from '../../lib/index.js';
+import { loginEmailPassword } from '../../lib/index.js';
 
 const login = () => {
   const container = document.createElement('div');
@@ -43,8 +43,6 @@ const login = () => {
         msgErro.innerHTML = 'usário ou senha incorretos';
       });
   });
-
-
 
   return container;
 }
