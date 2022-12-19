@@ -1,5 +1,7 @@
 @import url('./pages/home/home.css');
 @import url('./pages/login/login.css');
+@import url('./pages/info-clients/style.css');
+@import url('./pages/tabela-inter/style.css');
 
 @font-face {
   font-family: 'dinpro';
