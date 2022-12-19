@@ -57,7 +57,7 @@ const home = () => {
             <div class="hide" id="fade"></div>
             <div class="hide" id="modal">
             <div class="modal-header">
-                <button id="close-modal">FECHAR</button>
+                <button class="btn-close-modal" id="closeModal">FECHAR</button>
             </div>
                 <div id="info-modal"></div>
             </div>
@@ -76,25 +76,25 @@ const home = () => {
     const firstDate = container.querySelector('#firstDate');
     const secondDate = container.querySelector('#secondDate');
 
-     function displayBigClientsInfos(infos) {
+    function displayBigClientsInfos(infos) {
         const arrayBigClientsInfos = infos.map((item) => {
             const template = `  
                 <tr>                            
                     <td class="td-cnpj">${item.cnpj}</td>
                     <td class="td-periodo">${item.periodo}</td>
                     <td class="td-lote">${item.lote}</td>
-                    <td class="td-numero""><button id="btn-modal">${item.fazenda.numero}</button></td>
+                    <td class="td-numero""><button class="btn-modal" id="btn-modal">${item.fazenda.numero}</button></td>
                     <td class="td-zona">${item.zona}</td>
                     <td class="td-talhao">${item.talhao}</td>
                     <td class="td-propriedade">${item.propriedade}</td>
                 </tr>                              
             `;
             return template;
-        });  
-       
+        });
+
         return arrayBigClientsInfos.join("");
-    }    
-    
+    }
+
     function displayModal(infos) {
         const arrayModalElement = infos.map((item) => {
             const template = `  
@@ -104,61 +104,59 @@ const home = () => {
                                       
             `;
             return template;
-        });  
-       
-        return arrayModalElement.join("");
-    }    
-  
+        });
 
-    function filterData(infos, cnpj, cnpjInput) {        
+        return arrayModalElement.join("");
+    }
+
+    function filterData(infos, cnpj, cnpjInput) {
         const filterCnpj = infos.filter(obj => {
             return obj[cnpj] === cnpjInput;
-        });       
+        });
 
         return filterCnpj;
     }
 
     searchBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        
+
     });
 
     searchBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        bigClientsDisplay.style.display="block";
-        const dataFilter = filterData(infos, 'cnpj', cnpjInput.value); 
-        const resultFilter = dataFilter.filter((item) => 
-        {   
-            
-            if(firstDate.value === "" && secondDate.value === ""){
+        bigClientsDisplay.style.display = "block";
+        const dataFilter = filterData(infos, 'cnpj', cnpjInput.value);
+        const resultFilter = dataFilter.filter((item) => {
+
+            if (firstDate.value === "" && secondDate.value === "") {
                 return dataFilter
             };
 
-            if(item.periodo >= firstDate.value && item.periodo <= secondDate.value ){
+            if (item.periodo >= firstDate.value && item.periodo <= secondDate.value) {
                 return item
-            }    
-        })
-         
-         bigClientsInfosContainer.innerHTML = displayBigClientsInfos(resultFilter); 
-
-            const btnOpenModal = container.querySelector('#btn-modal');
-            const btnCloseModal =container.querySelector('#close-modal');
-            const modal = container.querySelector('#modal');
-            const fade = container.querySelector('#fade');
-            
-            const toggleModal = () =>{
-                modal.classList.toggle('hide');
-                fade.classList.toggle('hide');
             }
+        })
 
-            [btnOpenModal,btnCloseModal,fade].forEach((el) =>{
-                el.addEventListener('click',(e) =>{
-                    toggleModal()
-                    infoModal.innerHTML = displayModal(dataFilter);
-                }) 
+        bigClientsInfosContainer.innerHTML = displayBigClientsInfos(resultFilter);
+
+        const btnOpenModal = container.querySelector('#btn-modal');
+        const btnCloseModal = container.querySelector('#closeModal');
+        const modal = container.querySelector('#modal');
+        const fade = container.querySelector('#fade');
+
+        const toggleModal = () => {
+            modal.classList.toggle('hide');
+            fade.classList.toggle('hide');
+        }
+
+        [btnOpenModal, btnCloseModal, fade].forEach((el) => {
+            el.addEventListener('click', (e) => {
+                toggleModal()
+                infoModal.innerHTML = displayModal(dataFilter);
             })
-        });
-    
+        })
+    });
+
     return container;
 }
 

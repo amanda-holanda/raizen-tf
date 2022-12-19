@@ -6,11 +6,11 @@
     align-items: center;
 }
 
-.header-home {    
-    background-color: var(--branco);    
-    height: 20vh;    
-    display: flex; 
-    flex-direction: row;   
+.header-home {
+    background-color: var(--branco);
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
     justify-content: right;
     align-items: end;
     width: 100%;
@@ -19,8 +19,8 @@
 .logo-home {
     position: absolute;
     height: 13vh;
-    top:0;
-    left: 0;    
+    top: 0;
+    left: 0;
     margin: 2%;
 }
 
@@ -34,7 +34,6 @@
     font-size: 12px;
 }
 
-
 .material-symbols-outlined {
     color: var(--roxo);
     font-size: xx-large;
@@ -43,7 +42,7 @@
     padding-bottom: 5%;
 }
 
-.home-img {    
+.home-img {
     width: 100%;
     background: rgb(133, 184, 133);
 }
@@ -51,7 +50,7 @@
 .home-form {
     display: flex;
     justify-content: center;
-    flex-direction: column;   
+    flex-direction: column;
     padding: 3%;
     width: 100%;
     align-items: center;
@@ -63,7 +62,7 @@
     color: var(--roxo);
 }
 
-.label-cnpj {    
+.label-cnpj {
     width: 100%;
     font-size: 40px;
     font-weight: bolder;
@@ -81,7 +80,7 @@
 
 .input-cnpj {
     background-color: var(--cinza-claro);
-    padding: 5px;    
+    padding: 5px;
     font-size: 16px;
     width: 100%;
     height: 50px;
@@ -90,13 +89,13 @@
 
 .btn-buscar-cnpj {
     width: 290px;
-    height: 50px;       
+    height: 50px;
     background-color: var(--roxo);
     color: var(--branco);
     text-transform: uppercase;
     font-weight: bolder;
     cursor: pointer;
-    
+
 }
 
 button:hover {
@@ -106,8 +105,8 @@ button:hover {
     transition-delay: 0.01s;
 }
 
-.periodo-container{
-    width: 100%;    
+.periodo-container {
+    width: 100%;
     margin: 1% 0;
     text-align: center;
     padding: 2%;
@@ -119,48 +118,49 @@ button:hover {
     display: none;
 }
 
-table{
+table {
     width: 100%;
     border-bottom: var(--cinza-claro);
     color: #4A4A4A;
 
 }
 
-table, th{
+table,
+th {
     padding: 3px;
-    }
+}
 
-td{
+td {
     border-bottom: 1px solid rgb(234, 234, 234);
     padding: 1% 1% 1% 1%;
-    }
+}
 
-.td-cnpj{
+.td-cnpj {
     width: 15%;
 }
 
-.td-periodo{
+.td-periodo {
     width: 10%;
     justify-content: center;
 }
 
-.td-lote{
+.td-lote {
     width: 15%;
 }
 
-.td-fazenda{
+.td-fazenda {
     width: 20%;
 }
 
-.td-zona{
+.td-zona {
     width: 10%;
 }
 
-.td-talhao{
+.td-talhao {
     width: 20%;
 }
 
-.td-propriedade{
+.td-propriedade {
     width: 15%;
 }
 
@@ -169,18 +169,17 @@ tr:hover:nth-child(1n + 2) {
     color: f9f9f9;
 }
 
-
-#btn-modal {
-    color:#1fc0da;
+.btn-modal {
+    color: #1fc0da;
     background-color: #f9f9f9;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 1.1rem;
 }
 
-#close-modal {
+.btn-close-modal {
     background-color: #ea368e;
     padding: 0.6rem;
-    color:white
+    color: white
 }
 
 button:hover {
