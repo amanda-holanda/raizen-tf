@@ -19,7 +19,7 @@
   
   **Status do Projeto:** _Concluído_ 
 
-  [Confira aqui o resultado do projeto](https://amanda-holanda.github.io/raizen-tf/)
+  [>> Confira aqui o resultado final <<](https://amanda-holanda.github.io/raizen-tf/)
 
 </div>
 
